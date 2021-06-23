@@ -205,7 +205,7 @@ function npsApiCall(parkNJ) {
 };
 
 $(document).ready(function () {
-
+//old code hsould have been refactored or discarded
   $('#park-info-requests').hide();
   $('#list-of-parks').hide();
   $('.park-info-item').hide();
