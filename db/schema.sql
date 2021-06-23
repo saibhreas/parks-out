@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS parkout_db;
-CREATE DATABASE parkout_db;
-USE parkout_db;
+DROP DATABASE IF EXISTS parksout_db;
+CREATE DATABASE parksout_db;
+USE parksout_db;
