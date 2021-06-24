@@ -37,7 +37,7 @@ router.get("/", (req, res) => {
   if (req.user) {
     res.redirect("/where2go");
   }
-  res.sendFile(path.join(__dirname, "../../public/home.html"));
+  res.sendFile(path.join(__dirname, "../../public/index.html"));
 });
 
 module.exports = router;
