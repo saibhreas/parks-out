@@ -28,3 +28,35 @@ Code H10.  did npm i and  npm install dotenv.  if this does not help then I will
 ![screenshot](./public/img/error1Heroku.png)
 
 Reloade .env npm to no avial.  it says its lodaded but cannot get past node.  I deleted and re-entered ""start": "node server.js".  did a clean start/ rewrote connections file.
+
+### Heroku Failure:
+
+Not changing things, minor refactor.  checked locally.
+  * runs local inspect yields 200 for GET on all 12 elements of the page
+      Request URL: http://localhost:3001/where2go
+Request Method: GET
+Status Code: 200 OK
+Remote Address: [::1]:3001
+Referrer Policy: strict-origin-when-cross-origin
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Accept-Ranges: bytes
+Cache-Control: public, max-age=0
+Last-Modified: Thu, 24 Jun 2021 02:57:04 GMT
+ETag: W/"1508-17a3bf31499"
+Content-Type: text/html; charset=UTF-8
+Content-Length: 5384
+Date: Thu, 24 Jun 2021 04:30:18 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+Pick park api call from page has 200 for GET
+Request URL: https://developer.nps.gov/api/v1/parks?stateCode=NJ&api_key=aKdQbl5YRDOdOcAzaiDfbacSBby5NQWEU8s5Mi5D
+Request Method: GET
+Status Code: 200 OK
+Remote Address: 3.94.35.204:443
+Referrer Policy: strict-origin-when-cross-origin
+
+console logs fucntion including: GET /where2go
+completes GET's for api weather call
+pushing.

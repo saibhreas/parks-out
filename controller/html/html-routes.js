@@ -2,7 +2,7 @@ const router = require('express').Router();
 const path = require("path");
 const isAuthenticated = require("../../config/middleware/isAuthenticated");
 
-// GET all galleries for homepage
+// Get routes
 
 router.get("/signup", (req, res) => {
   console.log("GET /signup");
@@ -29,15 +29,24 @@ router.get("/where2go", isAuthenticated, (req, res) => {
   res.sendFile(path.join(__dirname, "../../public/where2go.html"));
 });
 
+//working on heroku get"/" issue
+// router.get("/", async (re, res) =>{
+//   try{
 
+//   }
+// })
 
 router.get("/", (req, res) => {
-  console.log("GET /");
+  console.log("get/ called");
   // If the user already has an account send them to the where2go page
   if (req.user) {
     res.redirect("/where2go");
   }
   res.sendFile(path.join(__dirname, "../../public/index.html"));
+});
+
+router.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../public/home.html'));
 });
 
 module.exports = router;
