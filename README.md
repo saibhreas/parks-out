@@ -24,3 +24,7 @@ heroku[router]:
   fwd="173.54.171.158" 
   dyno= connect= service= status=503 bytes= protocol=https
 Code H10.  did npm i and  npm install dotenv.  if this does not help then I will refactor code into clean files.
+
+![screenshot](./public/img/error1Heroku.png)
+
+Reloade .env npm to no avial.  it says its lodaded but cannot get past node.  I deleted and re-entered ""start": "node server.js".  did a clean start/ rewrote connections file.
