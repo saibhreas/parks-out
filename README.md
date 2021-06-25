@@ -60,3 +60,20 @@ Referrer Policy: strict-origin-when-cross-origin
 console logs fucntion including: GET /where2go
 completes GET's for api weather call
 pushing.
+
+#### Pushed--  misleading
+
+Build Log # ID 06625dfa-06bd-4aba-85f0-24856a3bb221
+
+-----> Build succeeded!
+-----> Discovering process types
+       Procfile declares types     -> (none)
+       Default types for buildpack -> web
+-----> Compressing...
+       Done: 38.6M
+-----> Launching...
+       Released v11
+       https://parkout.herokuapp.com/ deployed to Heroku
+
+I received this earlier in the evening. the app still fails with teh same  npm  GET / failure.
+  

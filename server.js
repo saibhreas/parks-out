@@ -4,7 +4,7 @@ const session = require("express-session");
 const sequelize = require("./config/connection");
 const routes = require("./controller");
 const axios = require('axios').default;
-var cookieParser = require('cookie-parser');
+//var cookieParser = require('cookie-parser');
 
 // Requiring passport as we've configured it
 const passport = require("./config/passport");
@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 3001;
 const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(cookieParser());
+//app.use(cookieParser());
 
 // *! everything in the public folder will use an absolute 
 // *! path which is why you can use /assets
